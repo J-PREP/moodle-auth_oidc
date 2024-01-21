@@ -298,6 +298,14 @@ function auth_oidc_get_remote_fields() {
             'givenName' => get_string('settings_fieldmap_field_givenName', 'auth_oidc'),
             'surname' => get_string('settings_fieldmap_field_surname', 'auth_oidc'),
             'mail' => get_string('settings_fieldmap_field_mail', 'auth_oidc'),
+            // City/Town  -- grade_in_school
+            // id number -- preferred_username
+            // institution -- student_division
+            // Department -- session_datetime
+            'grade_in_school' => 'Grade In School',
+            'preferred_username' => 'ID Number',
+            'student_division' => 'Juku/Kids',
+            'session_datetime' => 'Session Info',
         ];
     }
 
