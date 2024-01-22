@@ -24,7 +24,7 @@
  * @copyright (C) 2014 onwards Microsoft, Inc. (http://microsoft.com/)
  */
 
-$string['pluginname'] = 'OpenID Connect';
+$string['pluginname'] = 'OpenID Connect 4.3 - Nelson';
 $string['auth_oidcdescription'] = 'OpenID Connectプラグインは、設定可能なアイデンティティプロバイダを使用してシングルサインオン機能を提供します。';
 $string['cfg_authendpoint_key'] = '認証エンドポイント';
 $string['cfg_authendpoint_desc'] = 'アイデンティティプロバイダが使用する認証エンドポイントのURIです。';

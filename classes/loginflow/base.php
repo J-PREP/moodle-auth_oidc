@@ -277,6 +277,35 @@ class base {
                         }
                     }
                 }
+                // Nelson was here
+                // City/Town  -- grade_in_school
+                if (!isset($userdata['grade_in_school'])) {
+                    $grade_in_school = $token->claim('grade_in_school');
+                    if (!empty($grade_in_school)) {
+                        $userdata['grade_in_school'] = $grade_in_school;
+                    }
+                }
+                // id number -- preferred_username
+                if (!isset($userdata['preferred_username'])) {
+                    $preferred_username = $token->claim('preferred_username');
+                    if (!empty($preferred_username)) {
+                        $userdata['preferred_username'] = $preferred_username;
+                    }
+                }
+                // institution -- student_division
+                if (!isset($userdata['student_division'])) {
+                    $student_division = $token->claim('student_division');
+                    if (!empty($student_division)) {
+                        $userdata['student_division'] = $student_division;
+                    }
+                }
+                // Department -- session_datetime
+                if (!isset($userdata['session_datetime'])) {
+                    $session_datetime = $token->claim('session_datetime');
+                    if (!empty($session_datetime)) {
+                        $userdata['session_datetime'] = $session_datetime;
+                    }
+                }
             }
 
             $updateduser = static::apply_configured_fieldmap_from_token($userdata, $eventtype);

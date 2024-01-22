@@ -26,7 +26,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'OpenID Connect';
+$string['pluginname'] = 'OpenID Connect 4.3 - Nelson';
 $string['auth_oidcdescription'] = 'The OpenID Connect authentication plugin provides single-sign-on functionality using configurable IdP.';
 
 // Configuration pages.

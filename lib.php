@@ -298,6 +298,12 @@ function auth_oidc_get_remote_fields() {
             'givenName' => get_string('settings_fieldmap_field_givenName', 'auth_oidc'),
             'surname' => get_string('settings_fieldmap_field_surname', 'auth_oidc'),
             'mail' => get_string('settings_fieldmap_field_mail', 'auth_oidc'),
+            'idnumber' => 'idnumber',
+            'department' => 'department',
+            'institution' => 'institution',
+            'city' => 'city',
+            'moodle_department' => 'moodle_department',
+            //NELSON WAS HERE
         ];
     }
 
