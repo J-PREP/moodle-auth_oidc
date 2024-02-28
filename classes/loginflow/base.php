@@ -582,7 +582,9 @@ class base {
                     $tomatch = $idtoken->claim('email');
                 }
             } else {
-                $tomatch = $idtoken->claim('upn');
+                //$tomatch = $idtoken->claim('upn');
+                // Nelson was here
+                $tomatch = $idtoken->claim('student_division');
                 if (empty($tomatch)) {
                     $tomatch = $idtoken->claim('unique_name');
                 }

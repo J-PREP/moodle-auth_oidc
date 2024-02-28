@@ -314,11 +314,15 @@ class authcode extends base {
 
         // Check restrictions.
         $passed = $this->checkrestrictions($idtoken);
+        //Nelson was here
+        if ($passed !== true) redirect('https://friends.jprep.jp');
+        /**
         if ($passed !== true && empty($additionaldata['ignorerestrictions'])) {
             $errstr = 'User prevented from logging in due to restrictions.';
             utils::debug($errstr, 'handleauthresponse', $idtoken);
             throw new moodle_exception('errorrestricted', 'auth_oidc');
         }
+        **/
 
         // This is for setting the system API user.
         if (isset($additionaldata['justauth']) && $additionaldata['justauth'] === true) {
